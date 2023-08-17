@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+<listeners>
+<listener class-name="com.online_shopping_generic_library.ListernerImplementationClass"></listener>
+</listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="TestScript.WishList_Test"/>
+      <class name="TestScript.Create_User_Acc_TestngTest"/>
+      <class name="TestScript.Order_Product_Test"/>
+      <class name="TestScript.My_Cart_Test"/>
+      <class name="TestScript.Sign_Up_App_Test"/>
+      <class name="TestScript.Create_Category_TestngTest"/>
+      <class name="TestScript.Shipping_Billing_Addresses_TestngTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

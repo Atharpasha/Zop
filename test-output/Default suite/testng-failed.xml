@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestScript.My_Cart_Test">
+        <methods>
+          <include name="My_cart_Test"/>
+          <include name="congfi_BC"/>
+          <include name="congfi_AC"/>
+          <include name="congfi_BM"/>
+          <include name="congfi_AM"/>
+        </methods>
+      </class> <!-- TestScript.My_Cart_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
