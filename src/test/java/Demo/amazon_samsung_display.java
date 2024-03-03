@@ -20,7 +20,7 @@ public class amazon_samsung_display {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://www.amazon.com/");
+		driver.get(System.getProperty("URL"));
 		
 		driver.findElement(By.xpath("//input[@aria-label='Search Amazon']")).sendKeys("Phone");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
