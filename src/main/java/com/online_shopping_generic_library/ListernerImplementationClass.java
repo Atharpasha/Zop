@@ -1,12 +1,10 @@
 package com.online_shopping_generic_library;
 
 import java.io.IOException;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -41,7 +39,7 @@ public class ListernerImplementationClass implements ITestListener   {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	String MethodName=result.getMethod().getMethodName();
+	String MethodName=result.getMethod().getMethodName();	
 	test.log(Status.FAIL,MethodName+"--Testscript failed");
 	test.log(Status.FAIL,result.getThrowable());
 	Reporter.log(MethodName+"TestScript Failed");

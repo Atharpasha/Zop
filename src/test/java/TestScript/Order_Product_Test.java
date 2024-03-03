@@ -21,8 +21,9 @@ public class Order_Product_Test extends BaseClass {
 		home.clickOnMobilesLink(driver);
 		home.clickOnAddProductButton(driver);
 		home.verify_order(driver,wLib);  
-		Billing_Shipping_Addresses_And_Procced_To_Chechout_Page checkout=new Billing_Shipping_Addresses_And_Procced_To_Chechout_Page(driver);
-		checkout.procced_To_Checkout(wLib, driver);
+//		Billing_Shipping_Addresses_And_Procced_To_Chechout_Page checkout=new Billing_Shipping_Addresses_And_Procced_To_Chechout_Page(driver);
+//		checkout.procced_To_Checkout(wLib, driver);
+		ob.b.procced_To_Checkout(wLib, driver);
 		Choose_Payment_Method CPD=new Choose_Payment_Method(driver);
 		CPD.cod_Payment_Method();       
 		System.out.println("payment is done");

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="com.online_shopping_generic_library.ListernerImplementationClass"/>
-  </listeners>
-  <test thread-count="1" name="Test(failed)" parallel="tests">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScript.My_Cart_Test">
+      <class name="zop.Booking">
         <methods>
-          <include name="My_cart_Test"/>
-          <include name="congfi_BC"/>
-          <include name="congfi_AC"/>
-          <include name="congfi_BM"/>
-          <include name="congfi_AM"/>
+          <include name="r"/>
         </methods>
-      </class> <!-- TestScript.My_Cart_Test -->
+      </class> <!-- zop.Booking -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

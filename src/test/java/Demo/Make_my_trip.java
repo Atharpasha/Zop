@@ -22,22 +22,22 @@ public class Make_my_trip {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.get("https://www.makemytrip.com/");
-	    driver.navigate().refresh();
+	 //   driver.navigate().refresh();
 //	    Actions act=new Actions(driver);
 //	    act.moveByOffset(40,40).click().perform();
-	    driver.findElement(By.xpath("//span[text()='Departure']")).click();
-	    while(true)
-	    {
-	    	try {
-	    driver.findElement(By.xpath("//div[text()='"+month+"']/ancestor::div[@class='DayPicker-Month']/descendant::p[text()='"+date+"']")).click();
-	    break;
-	    	}catch(Exception e)
-	    	{
-	    		 driver.findElement(By.xpath("//span[@class='DayPicker-NavButton DayPicker-NavButton--next']")).click();	
-	    	}
-	    }
-	   
-	    driver.close();
+//	    driver.findElement(By.xpath("//span[text()='Departure']")).click();
+//	    while(true)
+//	    {
+//	    	try {
+//	    driver.findElement(By.xpath("//div[text()='"+month+"']/ancestor::div[@class='DayPicker-Month']/descendant::p[text()='"+date+"']")).click();
+//	    break;
+//	    	}catch(Exception e)
+//	    	{
+//	    		 driver.findElement(By.xpath("//span[@class='DayPicker-NavButton DayPicker-NavButton--next']")).click();	
+//	    	}
+//	    }
+//	   
+//	    driver.close();
 	}
 
 }

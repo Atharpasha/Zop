@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import com.online_shhopping_object_repository.Billing_Shipping_Addresses_And_Procced_To_Chechout_Page;
 import com.online_shhopping_object_repository.Home_Page;
 import com.online_shhopping_object_repository.Sign_In_Page;
 
@@ -18,12 +19,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
+	public WebDriver driver;
+	public ObjectRefrence ob = new ObjectRefrence(driver);
 	public DatabaseUtility dLib=new DatabaseUtility();
 	public FileUtility fLib=new FileUtility();
 	public WebDriverUtility wLib=new WebDriverUtility();
 	public ExcelUtility ELib=new ExcelUtility();
 	public JavaUtility JLib=new JavaUtility();
-	public WebDriver driver;
+	
 	public WebDriver sdriver;
 	//@BeforeSuite
 //	public void congfi_BS() throws SQLException

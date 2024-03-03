@@ -3,10 +3,15 @@ package Maven_Sample;
 import org.testng.annotations.Test;
 
 public class ATest {
-	@Test(groups= {"smoke"})
+	String a="king hh";
+	String b="king";
+	@Test()
 	public void aTest()
 	{
-		System.out.println("smoke..");
+		if(a==b)
+		{
+		System.out.println("kk");	
+		}
 		
 	}
 	@Test(groups= {"regression"})
